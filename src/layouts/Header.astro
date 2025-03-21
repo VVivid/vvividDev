@@ -1,0 +1,21 @@
+---
+
+const navPages =  [
+    {pageName:"Home", link:"/#"},
+    {pageName:"About", link:"/#"},
+    {pageName:"Blogs", link:"/#"},
+    {pageName:"Contact", link:"/#"},
+]
+
+---
+
+<nav class="flex justify-between items-center py-5 border-b border-border mb-[60px]">
+    <a href="#" class="font-bold text-[1.2rem] no-underline text-text">Ou David</a>
+    <div class="flex gap-[30px]">
+        {
+            navPages.map(p =>
+                    <a href={p.link} class="no-underline text-text text-[0.9rem] hover:text-accent transition-colors duration-300">{p.pageName}</a>
+            )
+        }
+    </div>
+</nav>

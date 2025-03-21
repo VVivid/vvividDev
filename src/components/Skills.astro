@@ -1,0 +1,26 @@
+---
+const skills = [
+    "System Architecture",
+    "Microservices",
+    "API Design",
+    "Cloud Infrastructure",
+    "Golang",
+    "Node.js",
+    "Kubernetes",
+    "Docker",
+    "TypeScript",
+    "CI/CD Pipelines"
+]
+---
+
+<section id="skills" class="mb-20">
+	<h2 class="text-[1.5rem] font-bold mb-[25px] relative after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-[40px] after:h-[3px] after:bg-accent">Technical Expertise</h2>
+	<div class="grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-[15px]">
+        {
+            skills.map(skill =>
+                    <div class="p-[15px] bg-secondary rounded-[4px] border border-border text-center grid place-items-center min-h-[80px]">
+                        {skill}
+                    </div>            )
+        }
+	</div>
+</section>
